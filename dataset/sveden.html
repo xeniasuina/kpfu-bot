@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<link id="csssrc" rel="stylesheet" type="text/css" href="/sveden/styles.css">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="0">
+<title>Сведения об образовательной организации</title>
+</head>
+<body>
+<div id="outcontainer">
+<div id="topheader"><a href="javascript:chovz()" itemprop="copy" id="ovz" class="ovz">Версия для слабовидящих</a></div>
+<div id="container">
+<div id="container_menu">
+<div class="menu"><a class="menu" href="/" style="font-size: larger">Главная страница</a></div><hr>
+<div class="menu"><a class="menu" href="/sveden/common/" onclick="go(this)">Основные сведения</a></div>
+<div class="menu"><a class="menu" href="/sveden/struct/" onclick="go(this)">Структура и органы управления образовательной организацией</a></div>
+<div class="menu"><a class="menu" href="/sveden/document/" onclick="go(this)">Документы</a></div>
+<div class="menu"><a class="menu" href="/sveden/education/" onclick="go(this)">Образование</a></div>
+<div class="menu"><a class="menu" href="/sveden/eduStandarts/" onclick="go(this)">Образовательные стандарты и требования</a></div>
+<div class="menu"><a class="menu" href="/sveden/employees/" onclick="go(this)">Руководство. Педагогический (научно-педагогический) состав</a></div>
+<div class="menu"><a class="menu" href="/sveden/objects/" onclick="go(this)">Материально-техническое обеспечение и оснащенность образовательного процесса</a></div>
+<div class="menu"><a class="menu" href="/sveden/grants/" onclick="go(this)">Стипендии и меры поддержки обучающихся</a></div>
+<div class="menu"><a class="menu" href="/sveden/paid_edu/" onclick="go(this)">Платные образовательные услуги</a></div>
+<div class="menu"><a class="menu" href="/sveden/budget/" onclick="go(this)">Финансово-хозяйственная деятельность</a></div>
+<div class="menu"><a class="menu" href="/sveden/vacant/" onclick="go(this)">Вакантные места для приема (перевода) обучающихся</a></div>
+<div class="menu"><a class="menu" href="/sveden/ovz/" onclick="go(this)">Доступная среда</a></div>
+<div class="menu"><a class="menu" href="/sveden/inter/" onclick="go(this)">Международное сотрудничество</a></div>
+</div>
+<div id="container_content">
+<div style="padding: 30px">
+<h1>Сведения об образовательной организации</h1>
+<!--Сгенерированные сведения-->
+<h3>Выберите подраздел</h3>
+<p><a href="/sveden/common/" onclick="go(this)">Основные сведения</a></p>
+<p><a href="/sveden/struct/" onclick="go(this)">Структура и органы управления образовательной организацией</a></p>
+<p><a href="/sveden/document/" onclick="go(this)">Документы</a></p>
+<p><a href="/sveden/education/" onclick="go(this)">Образование</a></p>
+<p><a href="/sveden/eduStandarts/" onclick="go(this)">Образовательные стандарты и требования</a></p>
+<p><a href="/sveden/employees/" onclick="go(this)">Руководство. Педагогический (научно-педагогический) состав</a></p>
+<p><a href="/sveden/objects/" onclick="go(this)">Материально-техническое обеспечение и оснащенность образовательного процесса</a></p>
+<p><a href="/sveden/grants/" onclick="go(this)">Стипендии и меры поддержки обучающихся</a></p>
+<p><a href="/sveden/paid_edu/" onclick="go(this)">Платные образовательные услуги</a></p>
+<p><a href="/sveden/budget/" onclick="go(this)">Финансово-хозяйственная деятельность</a></p>
+<p><a href="/sveden/vacant/" onclick="go(this)">Вакантные места для приема (перевода) обучающихся</a></p>
+<p><a href="/sveden/ovz/" onclick="go(this)">Доступная среда</a></p>
+<p><a href="/sveden/inter/" onclick="go(this)">Международное сотрудничество</a></p>
+<!--Конец сведений-->
+</div>
+</div>
+</div>
+<div id="footer">&copy; 2024 Федеральное государственное автономное образовательное учреждение высшего образования "Казанский (Приволжский) федеральный университет"</div>
+</div>
+<script language="JavaScript">
+window.onload=checkContHeight;
+window.onresize=checkContHeight;
+var ovz_href='';
+if(window.location.search=='?sv=1'){changecss(true);}
+function changecss(flag){var css_cont=document.getElementById('csssrc');var ovz_cont=document.getElementById('ovz');
+if(flag){css_cont.href='/sveden/styles_ovz.css';ovz_cont.innerHTML='Обычная версия';ovz_href='?sv=1';checkContHeight();}else{css_cont.href='/sveden/styles.css';ovz_cont.innerHTML='Версия для слабовидящих';ovz_href='';checkContHeight();}}
+function checkContHeight(){var container=document.getElementById('container');var container_menu=document.getElementById('container_menu');var container_content=document.getElementById('container_content');
+if(ovz_href=='?sv=1'){container.style.height=(document.body.clientHeight-69).toString()+'px';container_menu.style.height=(document.body.clientHeight-69).toString()+'px';container_content.style.height=(document.body.clientHeight-69).toString()+'px';}
+else{container.style.height=(document.body.clientHeight-54).toString()+'px';container_menu.style.height=(document.body.clientHeight-54).toString()+'px';container_content.style.height=(document.body.clientHeight-54).toString()+'px';}}
+function chovz(){if(ovz_href=='?sv=1'){changecss(false);}else{changecss(true);}}
+function go(aobj){aobj.href=aobj.href+ovz_href;}
+function sh(obj){if(typeof obj==='object')if(obj.style.display=='none')obj.style.display='block';else obj.style.display='none';}
+function shInLine(obj){if(typeof obj==='object')if(obj.style.display=='none')obj.style.display='inline';else obj.style.display='none';}
+var stickyElm = document.getElementsByClassName('table-fixed-head');var topHeader = document.getElementById('topheader');
+document.getElementById('container_content').onscroll = function(){for(let i = 0; i < stickyElm.length; i += 1){var colspanRow = stickyElm[i].getElementsByClassName('colspan-row');
+if(stickyElm[i].getBoundingClientRect().top-topHeader.offsetHeight<=-2){stickyElm[i].classList.add('set-border');for(let j=0; j<colspanRow.length; j+=1)colspanRow[j].classList.add('set-border');}
+if(stickyElm[i].getBoundingClientRect().top-topHeader.offsetHeight>-2){stickyElm[i].classList.remove('set-border');for(let j=0; j<colspanRow.length; j+=1)colspanRow[j].classList.remove('set-border');}}}
+</script>
+</body>
+</html>
